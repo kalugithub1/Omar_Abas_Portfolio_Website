@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Mail, Github, Linkedin } from "lucide-react";
+import { ArrowDown, Mail, Github, Linkedin, Download } from "lucide-react";
 import profileImg from "@/assets/omar-profile.png";
 
 const transition = { type: "spring" as const, duration: 0.5, bounce: 0 };
@@ -40,6 +40,16 @@ const HeroSection = () => {
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-muted text-foreground font-medium text-sm hover:bg-muted/80 transition-colors active:scale-[0.98]"
               >
                 View Projects
+              </a>
+              <a
+                href="https://omarabas.netlify.app/Omar_Abas_Omar_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-border text-foreground font-medium text-sm hover:bg-muted transition-colors active:scale-[0.98]"
+              >
+                <Download size={16} />
+                Download CV
               </a>
             </div>
 
