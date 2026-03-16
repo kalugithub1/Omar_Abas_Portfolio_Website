@@ -4,12 +4,15 @@ import { ExternalLink, Github } from "lucide-react";
 import swiftstayImg from "@/assets/swiftstay.png";
 import foodbankImg from "@/assets/foodbank.png";
 import atvImg from "@/assets/atv.png";
+import portfolioImg from "@/assets/portfolio.png";
+import todolistImg from "@/assets/todolist.png";
+import calculatorImg from "@/assets/calculator.png";
 
 const projects = [
   {
     title: "SwiftStay",
     description:
-      "Developed a high-performance booking engine using React and Node.js. Features user authentication, dynamic data retrieval through RESTful APIs, and Stripe payment integration for secure transactions.",
+      "A full-stack accommodation booking platform with user authentication, dynamic data retrieval through RESTful APIs, and Stripe payment integration for secure transactions.",
     image: swiftstayImg,
     tags: ["React", "Node.js", "MongoDB", "Stripe", "REST API"],
     liveUrl: "https://swiftstay-frontend.vercel.app/",
@@ -19,7 +22,7 @@ const projects = [
   {
     title: "FoodBank",
     description:
-      "Built a full-stack food delivery web application with user authentication, dynamic menu management, order tracking, and Stripe-powered payment processing.",
+      "A full-stack food delivery web application with user authentication, dynamic menu management, order tracking, and Stripe-powered payment processing.",
     image: foodbankImg,
     tags: ["React", "Node.js", "MongoDB", "Stripe", "Express"],
     liveUrl: null,
@@ -33,6 +36,36 @@ const projects = [
     image: atvImg,
     tags: ["React", "Node.js", "JavaScript"],
     liveUrl: "https://africantransformativevoice.netlify.app/",
+    githubUrl: null,
+    featured: false,
+  },
+  {
+    title: "Portfolio Website",
+    description:
+      "A personal portfolio showcasing projects, skills, and experience. Built with a clean, responsive design for an engaging browsing experience.",
+    image: portfolioImg,
+    tags: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://omarabas.netlify.app/",
+    githubUrl: null,
+    featured: false,
+  },
+  {
+    title: "Todo List App",
+    description:
+      "A dynamic to-do list application allowing users to add, edit, and delete tasks while practicing DOM manipulation.",
+    image: todolistImg,
+    tags: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://omarabastodolist.netlify.app/",
+    githubUrl: null,
+    featured: false,
+  },
+  {
+    title: "Online Calculator",
+    description:
+      "A fully functional online calculator built to enhance problem-solving skills and improve UI design experience.",
+    image: calculatorImg,
+    tags: ["HTML", "CSS", "JavaScript"],
+    liveUrl: null,
     githubUrl: null,
     featured: false,
   },
@@ -58,7 +91,7 @@ const ProjectsSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, i) => (
             <motion.div
               key={project.title}
