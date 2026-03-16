@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Mail, Github, Linkedin } from "lucide-react";
+import { ArrowDown, Mail, Github, Linkedin, Download } from "lucide-react";
 import profileImg from "@/assets/omar-profile.png";
 
 const transition = { type: "spring" as const, duration: 0.5, bounce: 0 };
