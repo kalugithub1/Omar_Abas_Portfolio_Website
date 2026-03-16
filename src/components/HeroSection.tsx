@@ -41,6 +41,16 @@ const HeroSection = () => {
               >
                 View Projects
               </a>
+              <a
+                href="https://omarabas.netlify.app/Omar_Abas_Omar_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-border text-foreground font-medium text-sm hover:bg-muted transition-colors active:scale-[0.98]"
+              >
+                <Download size={16} />
+                Download CV
+              </a>
             </div>
 
             <div className="flex items-center gap-4">
