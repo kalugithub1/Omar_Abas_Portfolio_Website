@@ -13,35 +13,56 @@ import {
   Terminal,
   Cloud,
   Workflow,
+  Cpu,
+  Smartphone,
+  Users,
+  Brain,
+  MessageSquare,
+  Trophy,
 } from "lucide-react";
 
 const skillGroups = [
   {
     title: "Frontend",
     skills: [
-      { name: "React", icon: Code2, level: "Proficient" },
-      { name: "HTML5", icon: FileCode, level: "Proficient" },
-      { name: "CSS3", icon: Palette, level: "Proficient" },
-      { name: "JavaScript (ES6+)", icon: Layout, level: "Proficient" },
-      { name: "Responsive Design", icon: Globe, level: "Proficient" },
+      { name: "React", icon: Code2 },
+      { name: "HTML5", icon: FileCode },
+      { name: "CSS3", icon: Palette },
+      { name: "JavaScript (ES6+)", icon: Layout },
+      { name: "Bootstrap", icon: Globe },
+      { name: "Responsive Design", icon: Smartphone },
     ],
   },
   {
     title: "Backend",
     skills: [
-      { name: "Node.js", icon: Server, level: "Proficient" },
-      { name: "Express.js", icon: Terminal, level: "Proficient" },
-      { name: "RESTful APIs", icon: Workflow, level: "Proficient" },
-      { name: "Python", icon: Code2, level: "Intermediate" },
+      { name: "Node.js", icon: Server },
+      { name: "Express.js", icon: Terminal },
+      { name: "RESTful APIs", icon: Workflow },
+      { name: "Python", icon: Code2 },
+      { name: "Java", icon: Cpu },
+      { name: "C++", icon: Cpu },
     ],
   },
   {
     title: "Database & Tools",
     skills: [
-      { name: "MongoDB", icon: Database, level: "Proficient" },
-      { name: "Stripe", icon: CreditCard, level: "Proficient" },
-      { name: "Git & GitHub", icon: GitBranch, level: "Proficient" },
-      { name: "Netlify / Vercel", icon: Cloud, level: "Proficient" },
+      { name: "MongoDB", icon: Database },
+      { name: "Firebase", icon: Cloud },
+      { name: "Stripe", icon: CreditCard },
+      { name: "Git & GitHub", icon: GitBranch },
+      { name: "Android Studio", icon: Smartphone },
+      { name: "Netlify / Vercel", icon: Cloud },
+    ],
+  },
+  {
+    title: "Soft Skills",
+    skills: [
+      { name: "Problem Solving", icon: Brain },
+      { name: "Analytical Thinking", icon: Brain },
+      { name: "Communication", icon: MessageSquare },
+      { name: "Teamwork", icon: Users },
+      { name: "Leadership", icon: Trophy },
     ],
   },
 ];
@@ -59,19 +80,23 @@ const SkillsSection = () => {
           transition={{ duration: 0.6 }}
         >
           <p className="text-sm font-mono text-primary mb-2">Skills</p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-12">
-            Technical toolkit
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">
+            Technical Toolkit
           </h2>
+          <p className="text-muted-foreground mb-12 max-w-xl">
+            Technologies and tools I use to design, develop, and deploy scalable web applications.
+          </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {skillGroups.map((group, gi) => (
             <motion.div
               key={group.title}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: gi * 0.1 }}
-              className="rounded-xl bg-muted p-1"
+              whileHover={{ y: -4, scale: 1.02 }}
+              className="group rounded-xl bg-muted p-[1px] hover:shadow-[0_0_20px_hsl(var(--primary)/0.15)] transition-shadow duration-300"
             >
               <div className="bg-background rounded-[11px] p-6 h-full">
                 <h3 className="text-sm font-mono text-primary mb-5">{group.title}</h3>
