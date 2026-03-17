@@ -102,7 +102,7 @@ const ProjectsSection = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               whileHover={{ y: -5 }}
-              className={`group rounded-xl bg-muted p-1 overflow-hidden ${
+              className={`group rounded-xl bg-muted p-[1px] overflow-hidden hover:shadow-[0_0_20px_hsl(var(--primary)/0.15)] transition-shadow duration-300 ${
                 project.featured && i === 0 ? "md:col-span-2" : ""
               }`}
             >
