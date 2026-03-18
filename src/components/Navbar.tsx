@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, Moon, Sun } from "lucide-react";
-import myLogo from "../assets/myLogo.png";
+import myLogo from "../assets/myLogo1.png";
 
 const navLinks = [
   { label: "Home", href: "#hero" },
@@ -55,7 +55,7 @@ const Navbar = () => {
           <img
             src={myLogo}
             alt="Omar Abas Logo"
-            className="h-12 w-12 rounded-full object-cover"
+            className="h-10 w-auto object-contain mix-blend-multiply dark:mix-blend-screen"
           />
         </a>
 
