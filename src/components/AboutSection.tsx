@@ -35,7 +35,7 @@ products.`,
             {
               icon: GraduationCap,
               title: "Education",
-              description: `Bachelor’s Degree in Software Engineering at United States International 
+              description: `Bachelor's Degree in Software Engineering at United States International 
 University-Africa (USIU-A), Nairobi. Current GPA: 3.719/4.0. Relevant coursework 
 includes: Object-Oriented Programming, Data Structures, Web Development, 
 and Software Engineering Principles. Expected graduation: September 2026.`,
@@ -55,6 +55,21 @@ working with modern tools including Git, Github,MongoDB, and Bootstrap.`,
 efficient systems. Known for teamwork, leadership, and clear communication 
 in collaborative environments. Experienced in managing projects, mentoring 
 peers, and delivering practical technology solutions.`,
+            },
+            {
+              icon: Users,
+              title: "Currently Learning",
+              items: [
+                "Next.js",
+                "Daraja API (M-Pesa)",
+                "Machine Learning fundamentals",
+              ],
+            },
+
+            {
+              icon: Target,
+              title: "Currently Developing",
+              description: `Building a livestock marketplace platform that connects farmers directly with buyers, eliminating middlemen, reducing exploitation, and widening market reach for livestock keepers across the region.`,
             },
           ].map((item, i) => (
             <motion.div
@@ -80,9 +95,23 @@ peers, and delivering practical technology solutions.`,
                 <h3 className="text-lg font-semibold text-foreground mb-3">
                   {item.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {item.description}
-                </p>
+                {item.items ? (
+                  <ul className="space-y-2">
+                    {item.items.map((point) => (
+                      <li
+                        key={point}
+                        className="text-sm text-muted-foreground flex items-center gap-2"
+                      >
+                        <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {item.description}
+                  </p>
+                )}
               </div>
             </motion.div>
           ))}
