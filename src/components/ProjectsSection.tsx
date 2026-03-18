@@ -16,7 +16,7 @@ const projects = [
     image: swiftstayImg,
     tags: ["React", "Node.js", "MongoDB", "Stripe", "REST API"],
     liveUrl: "https://swiftstay-frontend.vercel.app/",
-    githubUrl: "https://github.com/kalugithub1",
+    githubUrl: "https://github.com/kalugithub1/SwiftStay-Hotel-booking-web-app",
     featured: true,
   },
   {
@@ -36,8 +36,8 @@ const projects = [
     image: atvImg,
     tags: ["React", "Node.js", "JavaScript", "TypeScript"],
     liveUrl: "https://africantransformativevoice.netlify.app/",
-    githubUrl: null,
-    featured: false,
+    githubUrl: "https://github.com/kalugithub1/African-Transformative-Voice-",
+    featured: true,
   },
   {
     title: "Portfolio Website",
@@ -46,8 +46,8 @@ const projects = [
     image: portfolioImg,
     tags: ["React", "Node.js", "JavaScript", "TypeScript"],
     liveUrl: "https://omarabas.netlify.app/",
-    githubUrl: null,
-    featured: false,
+    githubUrl: "https://github.com/kalugithub1/Omar_Abas_Portfolio_Website",
+    featured: true,
   },
   {
     title: "Todo List App",
@@ -56,8 +56,8 @@ const projects = [
     image: todolistImg,
     tags: ["HTML", "CSS", "JavaScript"],
     liveUrl: "https://omarabastodolist.netlify.app/",
-    githubUrl: null,
-    featured: false,
+    githubUrl: "https://github.com/kalugithub1/TO-DO-LIST-/tree/main/ToDo-List",
+    featured: true,
   },
   {
     title: "Online Calculator",
@@ -65,8 +65,9 @@ const projects = [
       "A fully functional online calculator built to enhance problem-solving skills and improve UI design experience.",
     image: calculatorImg,
     tags: ["HTML", "CSS", "JavaScript"],
-    liveUrl: null,
-    githubUrl: null,
+    liveUrl: "https://omaronlinecalculator.netlify.app/",
+    githubUrl:
+      "https://github.com/kalugithub1/Online-calculator/tree/main/calculator",
     featured: false,
   },
 ];
