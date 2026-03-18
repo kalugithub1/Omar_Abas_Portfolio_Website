@@ -34,7 +34,7 @@ const projects = [
     description:
       "A responsive website for a refugee-led organization, showcasing their programs, vision, mission, and services with enhanced accessibility.",
     image: atvImg,
-    tags: ["React", "Node.js", "JavaScript"],
+    tags: ["React", "Node.js", "JavaScript", "TypeScript"],
     liveUrl: "https://africantransformativevoice.netlify.app/",
     githubUrl: null,
     featured: false,
@@ -44,7 +44,7 @@ const projects = [
     description:
       "A personal portfolio showcasing projects, skills, and experience. Built with a clean, responsive design for an engaging browsing experience.",
     image: portfolioImg,
-    tags: ["HTML", "CSS", "JavaScript"],
+    tags: ["React", "Node.js", "JavaScript", "TypeScript"],
     liveUrl: "https://omarabas.netlify.app/",
     githubUrl: null,
     featured: false,
@@ -90,7 +90,8 @@ const ProjectsSection = () => {
             Selected work
           </h2>
           <p className="text-muted-foreground mb-12 max-w-xl">
-            A collection of projects that showcase my skills in full-stack development and problem solving.
+            A collection of projects that showcase my skills in full-stack
+            development and problem solving.
           </p>
         </motion.div>
 
@@ -102,9 +103,7 @@ const ProjectsSection = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               whileHover={{ y: -5 }}
-              className={`group rounded-xl bg-muted p-[1px] overflow-hidden hover:shadow-[0_0_20px_hsl(var(--primary)/0.15)] transition-shadow duration-300 ${
-                project.featured && i === 0 ? "md:col-span-2" : ""
-              }`}
+              className={`group rounded-xl bg-muted p-[1px] overflow-hidden hover:shadow-[0_0_20px_hsl(var(--primary)/0.15)] transition-shadow duration-300 `}
             >
               <div className="bg-background rounded-[11px] overflow-hidden">
                 <div className="relative overflow-hidden aspect-video">

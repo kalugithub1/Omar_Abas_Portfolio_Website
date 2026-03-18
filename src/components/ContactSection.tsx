@@ -1,6 +1,13 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Mail, Github, Linkedin, Phone, Send, CheckCircle2 } from "lucide-react";
+import {
+  Mail,
+  Github,
+  Linkedin,
+  Phone,
+  Send,
+  CheckCircle2,
+} from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const ContactSection = () => {
@@ -18,7 +25,7 @@ const ContactSection = () => {
     const formData = new FormData(form);
 
     try {
-      const res = await fetch("https://formspree.io/f/xwpowvpp", {
+      const res = await fetch("https://formspree.io/f/maqplazw", {
         method: "POST",
         body: formData,
         headers: { Accept: "application/json" },
@@ -71,8 +78,12 @@ const ContactSection = () => {
             {submitted ? (
               <div className="flex flex-col items-center justify-center h-full text-center gap-4 py-16">
                 <CheckCircle2 size={48} className="text-primary" />
-                <p className="text-lg font-semibold text-foreground">Message sent successfully!</p>
-                <p className="text-sm text-muted-foreground">I'll get back to you soon.</p>
+                <p className="text-lg font-semibold text-foreground">
+                  Message sent successfully!
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  I'll get back to you soon.
+                </p>
                 <button
                   onClick={() => setSubmitted(false)}
                   className="text-sm text-primary hover:underline mt-2"
@@ -83,7 +94,15 @@ const ContactSection = () => {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1.5">
+                  <input
+                    name="subject"
+                    type="hidden"
+                    value="New submission from your Portfolio Website."
+                  />
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-foreground mb-1.5"
+                  >
                     Name
                   </label>
                   <input
@@ -97,7 +116,10 @@ const ContactSection = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-foreground mb-1.5">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-foreground mb-1.5"
+                  >
                     Email
                   </label>
                   <input
@@ -111,7 +133,10 @@ const ContactSection = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-foreground mb-1.5">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-foreground mb-1.5"
+                  >
                     Message
                   </label>
                   <textarea
@@ -155,7 +180,7 @@ const ContactSection = () => {
                   className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   <Mail size={18} />
-                  kaluabas12@gmail.com
+                  omarabasomar12@gmail.com
                 </a>
                 <a
                   href="tel:+254716734707"

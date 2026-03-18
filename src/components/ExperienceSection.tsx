@@ -16,13 +16,14 @@ const experiences = [
     ],
   },
   {
-    type: "education",
-    title: "BSc Software Engineering",
-    organization: "United States International University Africa",
-    period: "Expected 2025",
+    type: "work",
+    title: "Web Developer",
+    organization: "African Transformative Voice",
+    period: "September 2024 - November 2024",
     points: [
-      "Fourth-year student with a GPA of 3.719 / 4.0.",
-      "Relevant coursework: Object-Oriented Programming, Web Development, Data Structures, Software Engineering Principles.",
+      "Developed a responsive organizational website.",
+      "Improved design and functionality based on stakeholder feedback.",
+      "Optimized the site for performance and cross-device compatibility.",
     ],
   },
 ];
@@ -41,10 +42,11 @@ const ExperienceSection = () => {
         >
           <p className="text-sm font-mono text-primary mb-2">Experience</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">
-            Where I've worked & studied
+            Where I've worked
           </h2>
           <p className="text-muted-foreground mb-12 max-w-xl">
-            Professional experience and education that shaped my journey as a software engineer.
+            Professional experience that shaped my journey as a software
+            engineer.
           </p>
         </motion.div>
 
@@ -71,18 +73,33 @@ const ExperienceSection = () => {
                   <div className="bg-background rounded-[11px] p-6">
                     <div className="flex items-start gap-4">
                       <div className="p-2 rounded-lg bg-primary/10 text-primary shrink-0">
-                        {exp.type === "work" ? <Briefcase size={20} /> : <GraduationCap size={20} />}
+                        {exp.type === "work" ? (
+                          <Briefcase size={20} />
+                        ) : (
+                          <GraduationCap size={20} />
+                        )}
                       </div>
                       <div className="flex-1">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
-                          <h3 className="text-lg font-semibold text-foreground">{exp.title}</h3>
-                          <span className="text-xs font-mono text-primary">{exp.period}</span>
+                          <h3 className="text-lg font-semibold text-foreground">
+                            {exp.title}
+                          </h3>
+                          <span className="text-xs font-mono text-primary">
+                            {exp.period}
+                          </span>
                         </div>
-                        <p className="text-sm text-muted-foreground mb-3">{exp.organization}</p>
+                        <p className="text-sm text-muted-foreground mb-3">
+                          {exp.organization}
+                        </p>
                         <ul className="space-y-2">
                           {exp.points.map((point, pi) => (
-                            <li key={pi} className="text-sm text-muted-foreground flex gap-2">
-                              <span className="text-primary mt-1 shrink-0">•</span>
+                            <li
+                              key={pi}
+                              className="text-sm text-muted-foreground flex gap-2"
+                            >
+                              <span className="text-primary mt-1 shrink-0">
+                                •
+                              </span>
                               {point}
                             </li>
                           ))}

@@ -41,18 +41,26 @@ const skillGroups = [
       { name: "RESTful APIs", icon: Workflow },
       { name: "Python", icon: Code2 },
       { name: "Java", icon: Cpu },
-      { name: "C++", icon: Cpu },
     ],
   },
   {
-    title: "Database & Tools",
+    title: "Databases",
     skills: [
       { name: "MongoDB", icon: Database },
       { name: "Firebase", icon: Cloud },
-      { name: "Stripe", icon: CreditCard },
+      { name: "Data Modeling", icon: Database },
+      { name: "Structured Data Handling", icon: Database },
+    ],
+  },
+  {
+    title: "Tools & Platforms",
+    skills: [
       { name: "Git & GitHub", icon: GitBranch },
+      { name: "Netlify", icon: Cloud },
+      { name: "Vercel", icon: Cloud },
+      { name: "Stripe", icon: CreditCard },
+      { name: "VS Code", icon: Code2 },
       { name: "Android Studio", icon: Smartphone },
-      { name: "Netlify / Vercel", icon: Cloud },
     ],
   },
   {
@@ -84,29 +92,46 @@ const SkillsSection = () => {
             Technical Toolkit
           </h2>
           <p className="text-muted-foreground mb-12 max-w-xl">
-            Technologies and tools I use to design, develop, and deploy scalable web applications.
+            Technologies and tools I use to design, develop, and deploy scalable
+            web applications.
           </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {skillGroups.map((group, gi) => (
             <motion.div
               key={group.title}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: gi * 0.1 }}
+              transition={{ duration: 0.6, delay: gi * 0.15, ease: "easeOut" }}
               whileHover={{ y: -4, scale: 1.02 }}
-              className="group rounded-xl bg-muted p-[1px] hover:shadow-[0_0_20px_hsl(var(--primary)/0.15)] transition-shadow duration-300"
+              className="group rounded-xl bg-muted p-[1px] relative overflow-hidden
+                transition-shadow duration-300
+                hover:shadow-[0_0_0_1px_hsl(var(--primary)/0.4),0_0_16px_4px_hsl(var(--primary)/0.15),0_0_40px_8px_hsl(var(--primary)/0.08)]"
             >
-              <div className="bg-background rounded-[11px] p-6 h-full">
-                <h3 className="text-sm font-mono text-primary mb-5">{group.title}</h3>
+              {/* Shimmer sweep */}
+              <span
+                className="pointer-events-none absolute inset-0 z-10
+                  translate-x-[-100%] group-hover:translate-x-[100%]
+                  transition-transform duration-700 ease-in-out
+                  bg-gradient-to-r from-transparent via-white/10 to-transparent
+                  skew-x-[-20deg]"
+              />
+
+              <div className="bg-background rounded-[11px] p-6 h-full relative z-0">
+                <h3 className="text-sm font-mono text-primary mb-5">
+                  {group.title}
+                </h3>
                 <div className="flex flex-wrap gap-2">
                   {group.skills.map((skill, si) => (
                     <motion.span
                       key={skill.name}
                       initial={{ opacity: 0, scale: 0.9 }}
                       animate={isInView ? { opacity: 1, scale: 1 } : {}}
-                      transition={{ duration: 0.3, delay: gi * 0.1 + si * 0.05 }}
+                      transition={{
+                        duration: 0.3,
+                        delay: gi * 0.1 + si * 0.05,
+                      }}
                       className="skill-badge"
                     >
                       <skill.icon size={14} />
