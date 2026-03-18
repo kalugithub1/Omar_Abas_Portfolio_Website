@@ -196,7 +196,7 @@ const ContactSection = () => {
               <div className="bg-background rounded-[11px] p-6 space-y-5">
                 <h3 className="text-sm font-mono text-primary">Social</h3>
                 <a
-                  href="https://github.com/kalugithub1"
+                  href="https://github.com/kalugithub1?tab=repositories"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors"
