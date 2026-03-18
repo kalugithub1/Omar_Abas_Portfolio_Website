@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, Moon, Sun } from "lucide-react";
+import myLogo from "../assets/myLogo.png";
 
 const navLinks = [
   { label: "Home", href: "#hero" },
@@ -52,9 +53,9 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <a href="#hero" className="flex items-center">
           <img
-            src="/src/assets/myLogo.png"
+            src={myLogo}
             alt="Omar Abas Logo"
-            className="h-12 w-12 rounded-full object-cover "
+            className="h-12 w-12 rounded-full object-cover"
           />
         </a>
 
