@@ -1,73 +1,63 @@
-# Welcome to your Lovable project
+# Omar Abas Portfolio Website
 
-## Project info
+## Overview
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+This is the personal portfolio website of **Omar Abas**, showcasing web development projects, skills, and contact information. The website highlights scalable real-world platforms built with **JavaScript**, **React**, **Node.js**, and **MongoDB**.
 
-## How can I edit this code?
+The goal of this portfolio is to provide an online presence to showcase projects, development skills, and experience to potential employers or collaborators.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- **Responsive Design:** Works seamlessly on mobile, tablet, and desktop.
+- **Navigation:** Smooth scrolling navigation to sections like Home, Projects, About, and Contact.
+- **Project Showcase:** Grid layout displaying projects with images, descriptions, and links to live demos or GitHub repos.
+- **Contact Form:** Allows users to reach out via email.
+- **Favicon & Logo:** Personalized branding for browser tabs and the header.
+- **SEO & Social Sharing:** Meta tags for Open Graph and Twitter Cards included.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Frontend:** React, Tailwind CSS, HTML5, CSS3
+- **Backend:** Node.js (optional for forms or APIs)
+- **Database:** MongoDB (optional if backend integration is required)
+- **Tools & Libraries:** Vite (React bundler), Framer Motion (animations), Chart.js (if analytics included)
+- **Hosting:** Netlify / Vercel (for deployment)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## Folder Structure
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Omar Abas Portfolio Website
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Overview
 
-# Step 3: Install the necessary dependencies.
-npm i
+This is the personal portfolio website of **Omar Abas**, showcasing web development projects, skills, and contact information. The website highlights scalable real-world platforms built with **JavaScript**, **React**, **Node.js**, and **MongoDB**.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+The goal of this portfolio is to provide an online presence to showcase projects, development skills, and experience to potential employers or collaborators.
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Features
 
-**Use GitHub Codespaces**
+- **Responsive Design:** Works seamlessly on mobile, tablet, and desktop.
+- **Navigation:** Smooth scrolling navigation to sections like Home, Projects, About, and Contact.
+- **Project Showcase:** Grid layout displaying projects with images, descriptions, and links to live demos or GitHub repos.
+- **Contact Form:** Allows users to reach out via email.
+- **Favicon & Logo:** Personalized branding for browser tabs and the header.
+- **SEO & Social Sharing:** Meta tags for Open Graph and Twitter Cards included.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## Tech Stack
 
-This project is built with:
+- **Frontend:** React, Tailwind CSS, HTML5, CSS3
+- **Backend:** Node.js (optional for forms or APIs)
+- **Database:** MongoDB (optional if backend integration is required)
+- **Tools & Libraries:** Vite (React bundler), Framer Motion (animations), Chart.js (if analytics included)
+- **Hosting:** Netlify / Vercel (for deployment)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
