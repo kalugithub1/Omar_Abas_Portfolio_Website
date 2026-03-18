@@ -50,8 +50,12 @@ const Navbar = () => {
       className={`fixed top-0 left-0 right-0 z-50 nav-glass transition-shadow duration-300 ${scrolled ? "shadow-sm" : ""}`}
     >
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
-        <a href="#hero" className="text-lg font-semibold tracking-tight text-foreground">
-          @OMARABAS
+        <a href="#hero" className="flex items-center">
+          <img
+            src="/src/assets/myLogo.png"
+            alt="Omar Abas Logo"
+            className="h-12 w-12 rounded-full object-cover "
+          />
         </a>
 
         {/* Desktop */}
