@@ -43,9 +43,10 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-lg text-muted-foreground max-w-md leading-relaxed mb-8">
-              Full-stack developer focused on React ecosystems. Specialized in
-              integrating complex payment flows and robust database
-              architectures.
+              Full-stack developer specializing in React, Node.js, and MongoDB,
+              focused on building scalable, real-world applications. Experienced
+              in integrating secure payment systems and designing efficient,
+              production-ready database architectures.
             </p>
 
             <div className="flex flex-wrap gap-3 mb-10">
