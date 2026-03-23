@@ -69,7 +69,7 @@ peers, and delivering practical technology solutions.`,
             {
               icon: Target,
               title: "Currently Developing",
-              description: `Building a livestock marketplace platform that connects farmers directly with buyers, eliminating middlemen, reducing exploitation, and widening market reach for livestock keepers across the region.`,
+              description: `Building a livestock marketplace platform that connects farmers directly with buyers, eliminating middlemen, reducing exploitation, and widening market reach for livestock keepers across the region. Built with the MERN stack (MongoDB, Express, React, Node.js)."`,
             },
           ].map((item, i) => (
             <motion.div
