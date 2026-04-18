@@ -116,7 +116,7 @@ const HeroSection = () => {
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             >
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
-                <div className="absolute inset-0 rounded-3xl bg-primary/10 rotate-6" />
+                <div />
 
                 <img
                   src={profileImg}
