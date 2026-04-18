@@ -25,21 +25,11 @@ const HeroSection = () => {
             transition={{ ...transition, duration: 0.8 }}
             className="order-2 md:order-1"
           >
-            {/* ✅ STATUS BADGE ADDED HERE */}
-            <span className="inline-block px-3 py-1 text-xs bg-primary/10 text-primary rounded-full mb-4">
-              Available for internships
-            </span>
-
-            <p className="text-sm font-mono text-muted-foreground mb-4">
-              Full-Stack Developer
-            </p>
-
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-foreground leading-[1.1] mb-6">
-              Designing and building
+              Hello I'm
               <br />
-              <span className="text-primary">real-world platforms</span>
-              <br />
-              that scale.
+              <span className="text-primary">Omar Abas Omar</span>
+              <br />A Software Engineer.
             </h1>
 
             <p className="text-lg text-muted-foreground max-w-md leading-relaxed mb-8">
@@ -60,7 +50,7 @@ const HeroSection = () => {
 
               <a
                 href="#projects"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-muted text-foreground font-medium text-sm hover:bg-muted/80 transition-colors active:scale-[0.98]"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-border text-foreground font-medium text-sm hover:bg-muted/80 transition-colors active:scale-[0.98]"
               >
                 View Projects
               </a>
@@ -115,13 +105,13 @@ const HeroSection = () => {
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             >
-              <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+              <div className="relative w-100 h-100  border border-border rounded-full sm:w-80 sm:h-80 lg:w-96 lg:h-96">
                 <div />
 
                 <img
                   src={profileImg}
                   alt="Omar Abas Omar - Full Stack Developer"
-                  className="relative w-full h-full rounded-3xl shadow-lg"
+                  className="relative w-full h-full rounded-full "
                   loading="eager"
                 />
               </div>
