@@ -67,8 +67,8 @@ const Navbar = () => {
               href={link.href}
               className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                 activeSection === link.href.slice(1)
-                  ? "text-primary bg-primary/10"
-                  : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                  ? "text-primary "
+                  : " hover:text-foreground hover:bg-muted"
               }`}
             >
               {link.label}
