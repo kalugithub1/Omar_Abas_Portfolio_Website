@@ -19,6 +19,7 @@ const HeroSection = () => {
     >
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* TEXT CONTENT (Left Side) */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -76,7 +77,6 @@ const HeroSection = () => {
               >
                 <Github size={20} />
               </a>
-
               <a
                 href="https://www.linkedin.com/in/omar-abas-omar-08283624a/"
                 target="_blank"
@@ -85,7 +85,6 @@ const HeroSection = () => {
               >
                 <Linkedin size={20} />
               </a>
-
               <a
                 href="mailto:kaluabas12@gmail.com"
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -95,23 +94,42 @@ const HeroSection = () => {
             </div>
           </motion.div>
 
+          {/* IMAGE CONTENT (Right Side - Properly Centered and Masked) */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="order-1 md:order-2 flex justify-center"
+            className="order-1 md:order-2 flex justify-center items-center"
           >
+            {/* Floating Animation Wrapper */}
             <motion.div
-              animate={{ y: [0, -10, 0] }}
+              animate={{ y: [0, -15, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              className="relative"
             >
-              <div className="relative w-100 h-100  border border-border rounded-full sm:w-80 sm:h-80 lg:w-96 lg:h-96">
-                <div />
+              {/* Main Container / Clipping Mask */}
+              <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden flex items-center justify-center p-[6px]">
+                {/* 1. The Rotating Border Layer (Behind the image) */}
+                <motion.div
+                  animate={{ rotate: 360 }}
+                  transition={{ duration: 6, repeat: Infinity, ease: "linear" }}
+                  className="absolute inset-0 w-full h-full rounded-full"
+                  style={{
+                    /* LOGO COLORS APPLIED HERE */
+                    background:
+                      "conic-gradient(transparent, #006fe6 10%, transparent 40%, transparent 50%, #70c800 60%, transparent 90%)",
+                  }}
+                />
 
+                {/* 2. Inner Background Mask (Prevents gradient from showing in the center) */}
+                {/* Ensure this background matches your main page background */}
+                <div className="absolute inset-[6px] bg-white dark:bg-slate-950 rounded-full z-10" />
+
+                {/* 3. The Actual Profile Image (On top) */}
                 <img
                   src={profileImg}
                   alt="Omar Abas Omar - Full Stack Developer"
-                  className="relative w-full h-full rounded-full "
+                  className="relative w-full h-full rounded-full  z-20"
                   loading="eager"
                 />
               </div>
@@ -119,6 +137,7 @@ const HeroSection = () => {
           </motion.div>
         </div>
 
+        {/* Scroll Indicator */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
