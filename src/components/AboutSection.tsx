@@ -100,7 +100,7 @@ peers, and delivering practical technology solutions.`,
                     {item.items.map((point) => (
                       <li
                         key={point}
-                        className="text-sm text-muted-foreground flex items-center gap-2"
+                        className="text-sm  flex items-center gap-2"
                       >
                         <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
                         {point}
@@ -108,9 +108,7 @@ peers, and delivering practical technology solutions.`,
                     ))}
                   </ul>
                 ) : (
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {item.description}
-                  </p>
+                  <p className="text-sm  leading-relaxed">{item.description}</p>
                 )}
               </div>
             </motion.div>

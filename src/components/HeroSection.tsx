@@ -33,7 +33,7 @@ const HeroSection = () => {
               <br />A Software Engineer.
             </h1>
 
-            <p className="text-lg text-muted-foreground max-w-md leading-relaxed mb-8">
+            <p className="text-lg  max-w-md leading-relaxed mb-8">
               Full-stack developer specializing in React, Node.js, and MongoDB,
               focused on building scalable, real-world applications. Experienced
               in integrating secure payment systems and designing efficient,
